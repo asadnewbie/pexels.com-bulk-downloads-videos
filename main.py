@@ -1,13 +1,13 @@
 import pexelsPy
 import requests
 
-PEXELS_API = 'ADDING YOUR APY KEY HERE'
+PEXELS_API = '4v8RhU2jRdMdWqzgmy58sHrA1GbbrtfgSDVXtOviJZ25XjIXvRgq1zl5'
 api = pexelsPy.API(PEXELS_API)
 
 pageNumbers = 1 
 resultsPage = 5 
 
-api.search_videos('Sea', page=pageNumbers, results_per_page=resultsPage)
+api.search_videos('nature', page=pageNumbers, results_per_page=resultsPage)
 videos = api.get_videos()
 
 
